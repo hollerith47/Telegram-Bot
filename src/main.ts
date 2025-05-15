@@ -58,7 +58,7 @@ server.on('listening', async () => {
 
     logger.info('Bot commands have been successfully set up.');
   } catch (error) {
-    console.error('Failed to set up bot commands:', error);
+    logger.error('Failed to set up bot commands:', error);
   }
 });
 
@@ -71,7 +71,7 @@ process.once('SIGINT', () => {
 });
 
 process.once('SIGTERM', () => {
-  console.log('SIGTERM received');
+  logger.info('SIGTERM received');
   bot.stop('SIGTERM');
 });
 
