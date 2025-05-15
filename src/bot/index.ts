@@ -2,7 +2,6 @@ import { Markup, session, SessionStore, Telegraf, TelegramError } from 'telegraf
 import { Redis } from '@telegraf/session/redis';
 import { MyContext, MySession } from '@/types';
 import { BOT_TOKEN } from './config';
-import { example1, example2, example3, example4 } from './examples';
 import { logger } from './utils';
 
 const bot = new Telegraf<MyContext>(BOT_TOKEN);
@@ -45,11 +44,6 @@ bot.use(
     return next();
   },
 );
-
-/**
- * Load examples
- */
-bot.use(example1, example2, example3, example4);
 
 /**
  * Back command for default
