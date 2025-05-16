@@ -2,6 +2,8 @@
 
 A minimal and fast TypeScript starter template for building **Telegram bots** using **Telegraf**. It utilizes **SWC** for ultra-fast TypeScript compilation and modern developer tooling to help you quickly develop and deploy Telegram bots.
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template/7cnESs?referralCode=K0_xcg)
+
 ## ✨ Features
 
 - ⚡ Fast TypeScript compilation with SWC
