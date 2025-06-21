@@ -114,4 +114,13 @@ bot.catch(async (error, ctx) => {
   }
 });
 
+bot.on('text', async (ctx) => {
+  const userMessage = ctx.message.text;
+
+  // (optionnel) mettre en session pour tester Redis
+  ctx.session.lastMessage = userMessage;
+
+  await ctx.reply(`Tu as envoyé : ${userMessage}`);
+});
+
 export default bot;
