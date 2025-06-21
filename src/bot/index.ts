@@ -121,6 +121,7 @@ bot.on('text', async (ctx) => {
 
   // (optionnel) mettre en session pour tester Redis
   ctx.session.lastMessage = userMessage;
+  console.log("Message reçu :", userMessage);
 
   await ctx.reply(`Tu as envoyé : ${userMessage}`);
 });
