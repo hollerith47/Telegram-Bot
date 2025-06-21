@@ -42,7 +42,7 @@ bot.use(
 bot.start(async (ctx) => {
   const { reply_markup } = Markup.inlineKeyboard([
     Markup.button.url(
-      'Add me to your chat',
+      'Add H transfers to your chat ',
       `https://t.me/${ctx.botInfo.username}?startgroup=true`,
     ),
   ]);
@@ -53,6 +53,8 @@ Here are the available commands:
 /start - Start interaction with the bot
 /help - Display help information
 /settings - Display bot settings
+/send - Send money
+/receive - Receive money
 /back - Go back to the previous step
 /cancel - Cancel the current operation
   `.trim();
